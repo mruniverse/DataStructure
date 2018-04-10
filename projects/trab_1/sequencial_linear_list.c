@@ -46,7 +46,7 @@ int sequencial_search(List *l, char* c){
     return -1;
 }
 
-_Bool delete_element(List *l, char* c){
+bool delete_element(List *l, char* c){
     int pos, j;
     pos = sequencial_search(l, c);
 
@@ -63,11 +63,12 @@ _Bool delete_element(List *l, char* c){
 void order_names(List* l){
     Data aux;
     for (int k = 0; k < l->n-1; k++){
-        if(strncmp(l->D[k].name, l->D[k+1].name, 2) > 0){
+        if(strncmp(l->D[k].name, l->D[k+1].name, 1) > 0){
             // printf("%s\n", l->D[k+1].name);
             aux = l->D[k];
             l->D[k] = l->D[k+1];
             l->D[k+1] = aux;
+            order_names(l);
         }
     }
 }
