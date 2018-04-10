@@ -1,6 +1,6 @@
 typedef struct{
-  char* phone;
-  char* name;
+  char* phone; //Aqui eu utilizo ponteiro pra char para tornar
+  char* name;  //o tamanho de cada item de tamanho qualquer
   char* address;
 }Data;
 

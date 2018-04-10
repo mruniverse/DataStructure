@@ -32,7 +32,6 @@ int insert_new_data(List *l, Data d){
 
 int sequencial_search(List *l, char* c){
     int i = 0;
-
     while(i < l->n){
         if(strcmp(c, l->D[i].name) == 0 || strcmp(c, l->D[i].phone) == 0 || strcmp(c, l->D[i].address) == 0){
             printf("Name:%s | ", l->D[i].name);
@@ -68,7 +67,9 @@ void order_names(List* l){
             aux = l->D[k];
             l->D[k] = l->D[k+1];
             l->D[k+1] = aux;
-            order_names(l);
+
+            order_names(l); //Aqui é feita uma recursão para garantir
+                            //que todos os itens serão corretamente ordenados
         }
     }
 }
