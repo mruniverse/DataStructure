@@ -41,10 +41,8 @@ int sequencial_search(List *l, char* c){
 
             return i;
         }
-
         else i++;
     }
-
     return -1;
 }
 
