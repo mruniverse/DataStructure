@@ -1,3 +1,9 @@
+// Nome: Yuri Lucas Luz da Silva
+
+//RA: 120133
+
+//Trabalho: Trab_1-Implementação lista sequencial estática (LISTA TELEFÔNICA)
+
 #include <stdlib.h>
 #include <stdio.h>
 #include "sequencial_linear_list.h"
