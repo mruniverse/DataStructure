@@ -68,9 +68,9 @@ void order_names(List* l){
             aux = l->D[k];
             l->D[k] = l->D[k+1];
             l->D[k+1] = aux;
+            order_names(l);
         }
     }
-    order_names(l);
 }
 
 void reset(List* l){
