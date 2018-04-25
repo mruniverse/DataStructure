@@ -1,7 +1,6 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include <string.h>
-#include <stdbool.h>
 #include "sequencial_linear_list.h"
 
 void inicialize_list(List *l){

@@ -1,5 +1,3 @@
-//Trabalho: Trab_1-Implementação lista sequencial estática (LISTA TELEFÔNICA)
-#include <string.h>
 #include <stdlib.h>
 #include <stdio.h>
 #include "sequencial_linear_list.h"
