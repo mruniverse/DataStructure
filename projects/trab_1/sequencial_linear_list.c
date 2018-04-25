@@ -62,7 +62,7 @@ bool delete_element(List *l, char* c){
 void order_names(List* l){
     Data aux;
     for (int k = 0; k < l->n-1; k++){
-        if(strncmp(l->D[k].name, l->D[k+1].name, 1) > 0){
+        if(strncmp(l->D[k].name, l->D[k+1].name, 4) > 0){
             // printf("%s\n", l->D[k+1].name);
             aux = l->D[k];
             l->D[k] = l->D[k+1];
