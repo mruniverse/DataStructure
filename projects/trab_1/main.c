@@ -22,20 +22,30 @@ int main(){
   r.address = address;
   insert_new_data(&l, r);
 
-  r.name = "Ademilson";
-  r.phone = "3214-4654";
-  r.address = "NOBODYCARES";
+  strcpy(nome, "Ademilson");
+  strcpy(phone, "5798-6547");
+  strcpy(address, "rua");
+  r.name = nome;
+  r.phone = phone;
+  r.address = address;
   insert_new_data(&l, r);
-  //
-  // r.name = "Fabio";
-  // r.phone = "5798-6547";
-  // r.address = "vish nossa";
-  // insert_new_data(&l, r);
-  //
-  // r.name = "Bruno";
-  // r.phone = "8723-6547";
-  // r.address = "minha vish";
-  // insert_new_data(&l, r);
+
+  strcpy(nome, "Fabio");
+  strcpy(phone, "5798-6547");
+  strcpy(address, "Avenida");
+  r.name = nome;
+  r.phone = phone;
+  r.address = address;
+  insert_new_data(&l, r);
+
+  strcpy(nome, "Lorenço");
+  strcpy(phone, "0192-6547");
+  strcpy(address, "Estrada");
+  r.name = nome;
+  r.phone = phone;
+  r.address = address;
+  insert_new_data(&l, r);
+
   //
   // r.name = "Silvia";
   // r.phone = "9875-6449";
