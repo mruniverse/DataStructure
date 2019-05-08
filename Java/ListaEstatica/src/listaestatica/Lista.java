@@ -47,7 +47,7 @@ public class Lista extends ListaEstatica{
     }
     
     
-    public static void main(String[] args) {
+    public static void main(String[] args) {        
         Lista l = new Lista();
         Node<String> n = new Node("teste1");
         Node<String> newNode = new Node("oie");
@@ -82,7 +82,7 @@ public class Lista extends ListaEstatica{
     
     public boolean vazia(){
         return this.size == 0;
-    } 
+    }
     
     @Override
     public void insere(Node n) {
