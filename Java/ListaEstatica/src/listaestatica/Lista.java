@@ -67,6 +67,7 @@ public class Lista extends ListaEstatica{
         l.insere(newNode);
         l.insere(n);
         
+        l.imprimeLista();
         l.limpaLista();
         l.imprimeLista();
         
@@ -74,9 +75,13 @@ public class Lista extends ListaEstatica{
     
     
     
-    //Methods ==================================================================
+//    Methods ==================================================================
     public boolean cheia(){
         return this.node.length == this.size;
+    } 
+    
+    public boolean vazia(){
+        return this.size == 0;
     } 
     
     @Override
@@ -133,11 +138,16 @@ public class Lista extends ListaEstatica{
     public void imprimeLista() {
 //        System.out.println(size);
 //        System.out.println(node.length); 
-        for (int i = 0; i < this.size; i++) {
-               System.out.println(this.node[i].getData());
+        if(!vazia()){
+            for (int i = 0; i < this.size; i++) {
+                   System.out.println(this.node[i].getData());
+            }
+        }
+        else{
+            System.out.println("Lista Vazia!");
         }
     }
-    //End of Methods ===========================================================
+//    End of Methods ===========================================================
     
     
 }
