@@ -1,0 +1,40 @@
+boolean	/home/mruniverse/Desktop/utfpr/ed1/avaliacao_1/tadVetor.h	/^typedef enum boolean{false=0, true=1} Boolean;$/;"	enum	line:7
+false	/home/mruniverse/Desktop/utfpr/ed1/avaliacao_1/tadVetor.h	/^typedef enum boolean{false=0, true=1} Boolean;$/;"	enumerator	line:7	enum:boolean
+true	/home/mruniverse/Desktop/utfpr/ed1/avaliacao_1/tadVetor.h	/^typedef enum boolean{false=0, true=1} Boolean;$/;"	enumerator	line:7	enum:boolean
+Boolean	/home/mruniverse/Desktop/utfpr/ed1/avaliacao_1/tadVetor.h	/^typedef enum boolean{false=0, true=1} Boolean;$/;"	typedef	line:7	typeref:enum:boolean
+TipoElemento	/home/mruniverse/Desktop/utfpr/ed1/avaliacao_1/tadVetor.h	/^typedef int TipoElemento;$/;"	typedef	line:12
+array	/home/mruniverse/Desktop/utfpr/ed1/avaliacao_1/tadVetor.h	/^	TipoElemento* array;$/;"	member	line:15	struct:__anon1
+tamVetor	/home/mruniverse/Desktop/utfpr/ed1/avaliacao_1/tadVetor.h	/^	int tamVetor;$/;"	member	line:16	struct:__anon1
+qtdeElementos	/home/mruniverse/Desktop/utfpr/ed1/avaliacao_1/tadVetor.h	/^	int qtdeElementos;$/;"	member	line:17	struct:__anon1
+Vetor	/home/mruniverse/Desktop/utfpr/ed1/avaliacao_1/tadVetor.h	/^}Vetor;$/;"	typedef	line:18	typeref:struct:__anon1
+vet_criar	/home/mruniverse/Desktop/utfpr/ed1/avaliacao_1/tadVetor.c	/^Vetor* vet_criar(int tamVetor){$/;"	function	line:3	signature:(int tamVetor)
+vet_inserirFim	/home/mruniverse/Desktop/utfpr/ed1/avaliacao_1/tadVetor.c	/^Boolean vet_inserirFim(Vetor* v, TipoElemento elemento){$/;"	function	line:17	signature:(Vetor* v, TipoElemento elemento)
+vet_inserir	/home/mruniverse/Desktop/utfpr/ed1/avaliacao_1/tadVetor.c	/^Boolean vet_inserir(Vetor* v, TipoElemento elemento, int posicao){$/;"	function	line:32	signature:(Vetor* v, TipoElemento elemento, int posicao)
+vet_substituir	/home/mruniverse/Desktop/utfpr/ed1/avaliacao_1/tadVetor.c	/^Boolean vet_substituir(Vetor* v, int posicao, TipoElemento novoElemento){$/;"	function	line:49	signature:(Vetor* v, int posicao, TipoElemento novoElemento)
+vet_removerPosicao	/home/mruniverse/Desktop/utfpr/ed1/avaliacao_1/tadVetor.c	/^Boolean vet_removerPosicao(Vetor* v, int posicao, TipoElemento* endereco){$/;"	function	line:65	signature:(Vetor* v, int posicao, TipoElemento* endereco)
+vet_removerElemento	/home/mruniverse/Desktop/utfpr/ed1/avaliacao_1/tadVetor.c	/^int vet_removerElemento(Vetor* v, TipoElemento elemento){$/;"	function	line:79	signature:(Vetor* v, TipoElemento elemento)
+vet_tamanho	/home/mruniverse/Desktop/utfpr/ed1/avaliacao_1/tadVetor.c	/^int vet_tamanho(Vetor* v){$/;"	function	line:91	signature:(Vetor* v)
+vet_elemento	/home/mruniverse/Desktop/utfpr/ed1/avaliacao_1/tadVetor.c	/^Boolean vet_elemento(Vetor* v, int posicao, TipoElemento* saida){$/;"	function	line:95	signature:(Vetor* v, int posicao, TipoElemento* saida)
+vet_posicao	/home/mruniverse/Desktop/utfpr/ed1/avaliacao_1/tadVetor.c	/^int vet_posicao(Vetor* v, TipoElemento elemento){$/;"	function	line:106	signature:(Vetor* v, TipoElemento elemento)
+vet_imprimir	/home/mruniverse/Desktop/utfpr/ed1/avaliacao_1/tadVetor.c	/^void vet_imprimir(Vetor* v){$/;"	function	line:116	signature:(Vetor* v)
+vet_destruir	/home/mruniverse/Desktop/utfpr/ed1/avaliacao_1/tadVetor.c	/^void vet_destruir(Vetor* v){$/;"	function	line:124	signature:(Vetor* v)
+vet_toString	/home/mruniverse/Desktop/utfpr/ed1/avaliacao_1/tadVetor.c	/^Boolean vet_toString(Vetor* v, char* enderecoString){$/;"	function	line:129	signature:(Vetor* v, char* enderecoString)
+verifica_aumenta	/home/mruniverse/Desktop/utfpr/ed1/avaliacao_1/tadVetor.c	/^void verifica_aumenta(Vetor* v){$/;"	function	line:144	signature:(Vetor* v)
+verifica_diminui	/home/mruniverse/Desktop/utfpr/ed1/avaliacao_1/tadVetor.c	/^void verifica_diminui(Vetor* v){$/;"	function	line:151	signature:(Vetor* v)
+vet_clone	/home/mruniverse/Desktop/utfpr/ed1/avaliacao_1/tadVetor.c	/^Vetor* vet_clone(Vetor* v){$/;"	function	line:159	signature:(Vetor* v)
+vet_ordenarBuble	/home/mruniverse/Desktop/utfpr/ed1/avaliacao_1/tadVetor.c	/^void vet_ordenarBuble(Vetor* v){$/;"	function	line:169	signature:(Vetor* v)
+vet_ordenarSelection	/home/mruniverse/Desktop/utfpr/ed1/avaliacao_1/tadVetor.c	/^void vet_ordenarSelection(Vetor* v){$/;"	function	line:182	signature:(Vetor* v)
+vet_ordenarSelection_parcial	/home/mruniverse/Desktop/utfpr/ed1/avaliacao_1/tadVetor.c	/^void vet_ordenarSelection_parcial(Vetor* v, int percentual){$/;"	function	line:199	signature:(Vetor* v, int percentual)
+vet_ordenarSelectionDesc	/home/mruniverse/Desktop/utfpr/ed1/avaliacao_1/tadVetor.c	/^void vet_ordenarSelectionDesc(Vetor* v){$/;"	function	line:219	signature:(Vetor* v)
+vet_ordenarInsertion	/home/mruniverse/Desktop/utfpr/ed1/avaliacao_1/tadVetor.c	/^void vet_ordenarInsertion(Vetor* v){$/;"	function	line:236	signature:(Vetor* v)
+vet_buscaBinaria	/home/mruniverse/Desktop/utfpr/ed1/avaliacao_1/tadVetor.c	/^int vet_buscaBinaria(Vetor* v, TipoElemento elemento){$/;"	function	line:250	signature:(Vetor* v, TipoElemento elemento)
+vet_importar	/home/mruniverse/Desktop/utfpr/ed1/avaliacao_1/tadVetor.c	/^Vetor* vet_importar(char* nomeArquivo){$/;"	function	line:276	signature:(char* nomeArquivo)
+vet_exportar	/home/mruniverse/Desktop/utfpr/ed1/avaliacao_1/tadVetor.c	/^Boolean vet_exportar(Vetor* v, char* nomeArquivo){$/;"	function	line:302	signature:(Vetor* v, char* nomeArquivo)
+vet_criarAleatorio	/home/mruniverse/Desktop/utfpr/ed1/avaliacao_1/tadVetor.c	/^Vetor* vet_criarAleatorio(int tam){$/;"	function	line:316	signature:(int tam)
+vet_criarAscendente	/home/mruniverse/Desktop/utfpr/ed1/avaliacao_1/tadVetor.c	/^Vetor* vet_criarAscendente(int tam){$/;"	function	line:327	signature:(int tam)
+vet_criarDescendente	/home/mruniverse/Desktop/utfpr/ed1/avaliacao_1/tadVetor.c	/^Vetor* vet_criarDescendente(int tam){$/;"	function	line:333	signature:(int tam)
+vet_criarAscendenteParcial	/home/mruniverse/Desktop/utfpr/ed1/avaliacao_1/tadVetor.c	/^Vetor* vet_criarAscendenteParcial(int tam, int percentual){$/;"	function	line:339	signature:(int tam, int percentual)
+negativeToPositive	/home/mruniverse/Desktop/utfpr/ed1/avaliacao_1/tadVetor.c	/^int negativeToPositive(Vetor* v, int posicao){$/;"	function	line:345	signature:(Vetor* v, int posicao)
+itoa	/home/mruniverse/Desktop/utfpr/ed1/avaliacao_1/tadVetor.c	/^char* itoa(int val, int base){$/;"	function	line:353	signature:(int val, int base)
+shiftLeft	/home/mruniverse/Desktop/utfpr/ed1/avaliacao_1/tadVetor.c	/^void shiftLeft(Vetor* v, int posicao){$/;"	function	line:368	signature:(Vetor* v, int posicao)
+main	/home/mruniverse/Desktop/utfpr/ed1/avaliacao_1/tadVetor_teste.c	/^int main(int argc, char const *argv[]) {$/;"	function	line:3	signature:(int argc, char const *argv[])
