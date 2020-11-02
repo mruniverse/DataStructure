@@ -49,7 +49,7 @@ void teste01(){
     lista_intercalar(l1, l2);
     lista_toString(l1, str_l1);
     lista_toString(l2, str_l2);
-    
+
     test(strcmp(str_l1, "[10,20,30,40,50,60,70,80,90,100,110,120]") == 0, "l1");
     test(strcmp(str_l2, "[]") == 0, "l2");
 }
@@ -95,8 +95,8 @@ void teste03(){
     lista_inserirFim(l1, 20);
     lista_inserirFim(l1, 35);
     lista_inserirFim(l1, 50);
-    
-    
+
+
     Lista* l2 = lista_criar();
     lista_inserirFim(l2, 5);
     lista_inserirFim(l2, 15);
@@ -104,7 +104,7 @@ void teste03(){
     lista_inserirFim(l2, 30);
     lista_inserirFim(l2, 60);
     lista_inserirFim(l2, 70);
-    
+
     char str_l1[500];
     char str_l2[500];
 
@@ -124,9 +124,9 @@ void teste04(){
     lista_inserirFim(l1, 1);
     lista_inserirFim(l1, 2);
     lista_inserirFim(l1, 3);
-    
+
     Lista* l2 = lista_criar();
-    
+
     char str_l1[500];
     char str_l2[500];
 
@@ -143,12 +143,12 @@ void teste05(){
     printf(">>> TESTE 05                                    \n");
     printf("------------------------------------------------\n");
     Lista* l1 = lista_criar();
-    
+
     Lista* l2 = lista_criar();
     lista_inserirFim(l2, 1);
     lista_inserirFim(l2, 2);
     lista_inserirFim(l2, 3);
-    
+
     char str_l1[500];
     char str_l2[500];
 
@@ -159,5 +159,3 @@ void teste05(){
     test(strcmp(str_l1, "[1,2,3]") == 0, "l1");
     test(strcmp(str_l2, "[]") == 0, "l2");
 }
-
-
