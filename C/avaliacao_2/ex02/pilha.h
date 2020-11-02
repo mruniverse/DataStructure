@@ -37,7 +37,7 @@ Boolean pilha_empilharTodos(Pilha* p, TipoElemento* vetor, int tamVetor);
 **************************************/
 
 Boolean pilha_ehValida(Pilha* p){
-    return (p != NULL? true: false);    
+    return (p != NULL? true: false);
 }
 
 No* criar_no(TipoElemento elemento, No* proximoNo){
@@ -66,20 +66,18 @@ void pilha_destruir(Pilha* p){
         p->topo = p->topo->prox;
         free(aux);
     }
-    
+
     free(p);
 }
 
 Boolean pilha_empilhar(Pilha* p, TipoElemento elemento){
     if(!pilha_ehValida(p)) return false;
-    
+
     No* novo = criar_no(elemento, NULL);
     novo->prox = p->topo;
     p->topo = novo;
     p->qtdeElementos++;
     return true;
-
-
 }
 
 Boolean pilha_desempilhar(Pilha* p, TipoElemento* saida){ // estratégia do scanf
@@ -100,10 +98,9 @@ Boolean pilha_desempilhar(Pilha* p, TipoElemento* saida){ // estratégia do scan
 Boolean pilha_topo(Pilha* p, TipoElemento* saida){ // estratégia do scanf
     if(!pilha_ehValida(p)) return false;
     if(pilha_vazia(p)) return false;
-    
+
     *saida = p->topo->dado;
     return true;
-
 }
 
 Boolean pilha_vazia(Pilha* p){
@@ -112,7 +109,7 @@ Boolean pilha_vazia(Pilha* p){
 
 void pilha_imprimir(Pilha* p){
     if(!pilha_ehValida(p)) return;
-    
+
     printf("[");
     No* aux = p->topo;
     while(aux != NULL){
@@ -164,4 +161,3 @@ Boolean pilha_empilharTodos(Pilha* p, TipoElemento* vetor, int tamVetor){
     }
     return true;
 }
-

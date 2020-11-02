@@ -18,7 +18,7 @@ int main(){
 
     fila_remover(f, &elemento);
     test(elemento == 10, "Remocao");
-    
+
 
     fila_primeiro(f, &elemento);
     test(elemento == 20, "Obtendo o primeiro elemento");
@@ -30,7 +30,7 @@ int main(){
 
     int resultado = fila_remover(f, &elemento);
     test(resultado == 0, "Remocao na fila vazia");
-    
+
     resultado = fila_primeiro(f, &elemento);
     test(resultado == 0, "Obtendo primeiro elemento na fila vazia");
 
@@ -38,8 +38,4 @@ int main(){
     test(fila_inserir(f2,10)==0, "Insercao na fila invalida");
     test(fila_remover(f2, &elemento)==false, "Remocao na fila invalida");
     test(fila_primeiro(f2, &elemento)==0, "Obtendo primeiro elemento na fila invalida");
-
-
-
-
 }
